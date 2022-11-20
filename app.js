@@ -31,7 +31,8 @@ function renderProducts(products) {
         </div>`
         return document.querySelector("#products").innerHTML = acc;
     },'');
-    let cards = document.getElementsByClassName("card")
+    
+    const cards = document.getElementsByClassName("card")
     for(let item = 0; item < cards.length; item++) {
         let card =cards[item];
         card.onmouseenter = function(e) {
@@ -55,7 +56,7 @@ fetch('https://fakestoreapi.com/products')
             }
         });
 
-    let selectCatg = `<select class="form-control">
+    const selectCatg = `<select class="form-control">
         <option>All</option>
         ${filteredData.reduce(function (acc, el) {
             if (!acc.includes(el.catg)) {
