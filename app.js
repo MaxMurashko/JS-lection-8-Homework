@@ -34,7 +34,7 @@ function renderProducts(products) {
     
     const cards = document.getElementsByClassName("card")
     for(let item = 0; item < cards.length; item++) {
-        let card =cards[item];
+        let card = cards[item];
         card.onmouseenter = function(e) {
             e.currentTarget.classList.add("border-dark");
         }
