@@ -33,14 +33,14 @@ function renderProducts(products) {
     },'');
     
     const cards = document.querySelectorAll(".card")
-    cards.forEach(function(card) {
-        card.onmouseenter = function(e) {
+    cards.forEach(function(el) {
+        el.onmouseenter = function(e) {
             e.currentTarget.classList.add("border-dark");
         }
-        card.onmouseleave = function(e) {
+        el.onmouseleave = function(e) {
             e.currentTarget.classList.remove("border-dark");
         }
-    });
+    })
 }
 
 fetch('https://fakestoreapi.com/products')
