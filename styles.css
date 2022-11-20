@@ -1,0 +1,11 @@
+.card-img-top {
+    max-height: 15rem;
+    width: auto;
+    max-width: 80%;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    z-index: 1;
+    cursor: pointer;
+}
