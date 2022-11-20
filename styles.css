@@ -3,7 +3,7 @@
     width: auto;
     max-width: 80%;
 }
-.card:hover {
+.card:hover { 
     transform: scale(1.1);
     transition: 1s;
     z-index: 1;

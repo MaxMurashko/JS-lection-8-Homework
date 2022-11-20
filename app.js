@@ -21,7 +21,7 @@ function filterProducts(search) {
 
 function renderProducts(products) {
     products.reduce(function(acc, product) {
-        acc += `<div class="card col-lg-3 col-md-6 border-light">
+        acc += `<div class="card col-lg-3 col-md-6">
         <img class="card-img-top mx-auto pt-3" src="${product.img}" alt="${product.title} image">
         <div class="card-body">
             <h5 class="card-title">${product.title}</h5>
@@ -40,7 +40,7 @@ function renderProducts(products) {
         el.onmouseleave = function(e) {
             e.currentTarget.classList.remove("border-dark");
         }
-    })
+    });
 }
 
 fetch('https://fakestoreapi.com/products')
